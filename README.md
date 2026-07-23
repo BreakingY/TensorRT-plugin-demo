@@ -3,7 +3,7 @@
 1. 编译torch自定义算子
     * cd cuda_op
     * python setup.py build_ext --inplace
-    * cd /data/sunkx/workspace/trt_centerpool_demo
+    * cd /data/sunkx/workspace/TensorRT-plugin-demo
 2. 模型测试、导出onnx
     * python model_symbolic.py
 3. TensorRT插件编译
@@ -14,11 +14,11 @@
     * cd build
     * cmake ..
     * make -j
-    * cd /data/sunkx/workspace/trt_centerpool_demo
+    * cd /data/sunkx/workspace/TensorRT-plugin-demo
 3. 模型转换
     * /data/sunkx/TensorRT-10.4.0.26/bin/trtexec --onnx=./model_symbolic.onnx --plugins=./plugin/build/libcenterpool_plugin.so --saveEngine=model.engine --device=2
 4. 模型推理
-    * export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/data/sunkx/workspace/trt_centerpool_demo/plugin/build
+    * export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/data/sunkx/workspace/TensorRT-plugin-demo/plugin/build
     * cd infer
     * mkdir build
     * cmake ..

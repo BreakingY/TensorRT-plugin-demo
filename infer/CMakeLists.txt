@@ -8,7 +8,7 @@ set(CMAKE_CXX_STANDARD 14)
 include_directories(/data/sunkx/TensorRT-10.4.0.26/include /usr/local/cuda/include)
 
 
-link_directories(/data/sunkx/TensorRT-10.4.0.26/lib /usr/local/cuda/lib64 /data/sunkx/workspace/trt_centerpool_demo/plugin/build)
+link_directories(/data/sunkx/TensorRT-10.4.0.26/lib /usr/local/cuda/lib64 /data/sunkx/workspace/TensorRT-plugin-demo/plugin/build)
 
 add_executable(infer infer.cpp)
 
