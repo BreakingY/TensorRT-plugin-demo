@@ -1,4 +1,4 @@
-# 自定义算子及TensorRT插件demo
+# PyTorch自定义算子及TensorRT插件demo
 
 1. 编译torch自定义算子
     * cd cuda_op
