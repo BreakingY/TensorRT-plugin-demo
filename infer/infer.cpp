@@ -126,7 +126,7 @@ int main(int argc, char** argv)
 
     std::cout << "output:" << std::endl;
 
-    for(int i=0;i<10;i++)
+    for(int i=0;i<outputSize;i++)
     {
 
         std::cout << output[i] << " ";
