@@ -21,6 +21,7 @@
     * export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/data/sunkx/workspace/TensorRT-plugin-demo/plugin/build
     * cd infer
     * mkdir build
+    * cd build
     * cmake ..
     * make -j
     * ./infer ../../model.engine
